@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Guard | AI Fake News Detector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="header-logo">🛡️ Truth Guard</div>
+            <div class="header-subtitle">Your AI Fake News Detective</div>
+        </header>
+
+        <div class="chat-messages" id="chat-messages">
+            <!-- Initial Bot Message -->
+            <div class="message bot">
+                <div class="avatar">🛡️</div>
+                <div class="bubble">
+                    Hello! I am Truth Guard. Paste any news headline or short article below, and I will analyze it to determine if it is Real or Fake News.
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <form id="chat-form">
+                <input type="text" id="news-input" placeholder="Paste a news headline or text here..." autocomplete="off" required>
+                <button type="submit" id="send-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
